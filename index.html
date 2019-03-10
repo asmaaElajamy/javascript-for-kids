@@ -1,9 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>JavaScript for Kids</title>
-  </head>
-  <body>
-    <script src="word-guess.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript for kids</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="word-guess.js"></script>
+    </head>
+    <body>
+        <div class="bg-image"></div>
+        <div class="main-content" id="main-content">
+
+            <p id="fixed-label">Secret word game</p>
+            <input type="text" id="secret-input" placeholder="Player 1, Enter your secret word." onkeyup="player2UI(event)">
+            <button type="button" id="proceed" onclick="execute()">Press here to continue</button>
+        </div>
+    </body>
 </html>
